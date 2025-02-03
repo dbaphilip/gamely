@@ -26,7 +26,7 @@ export default function ({ selectedGenre, selectedPlatform }: Props) {
     <>
       {error && <div className="error">{error}</div>}
       {data.map((game) => (
-        <div className="col-4 my-2" key={game.id}>
+        <div className="col-2 my-2" key={game.id}>
           <GameCard game={game} />
         </div>
       ))}
